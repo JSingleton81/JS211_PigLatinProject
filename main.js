@@ -11,11 +11,33 @@ const rl = readline.createInterface({
 });
 
 
+
 const pigLatin = (word) => {
 
+  word = word.toLowerCase()
+  word = word.trim()
+  console.log(word)
   // Your code here
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  for (let i = 0; i < word.length; i++){
+    if (vowels.includes(word[0])){
+      return word + 'yay'
+    } else if (vowels.includes(word[i])){
+      // heart
+      // return true, i = 1 ('e')
+      // earthay
+      // 
+      return word.slice(i) + word.slice(0, i) + 'ay'
+      
+    }
+      
+  }
+  console.log(pigLatin["car"]['ay'])
 
 }
+
+
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
