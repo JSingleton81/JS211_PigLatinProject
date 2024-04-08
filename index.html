@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -12,7 +12,12 @@
     <form>
       <input id="user-input" type="text">
       <!-- How do you get this input sent to the pigLatin() function? -->
-      <button onclick="pigLatin()">Translate</button>
+      <div id="input1"></div>
+      <!-- <button type="button" id="translate-button">Translate</button> -->
+
+
+      <button onclick="pigLatin()" type="button">Translate</button>
+
     </form>  
     <hr/>
   </body>
